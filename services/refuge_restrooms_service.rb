@@ -1,4 +1,4 @@
-require_relative 'search_results'
+require './poros/search_results'
 
 class RefugeRestroomsService
 
