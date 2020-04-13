@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'faraday'
 require 'pry'
-require_relative 'restrooms_service'
+require './services/refuge_restrooms_service'
 
 get '/api/v1/search' do
   number_of_results = params['number_of_results']
