@@ -3,5 +3,5 @@ require 'bundler'
 
 Bundler.require
 
-require './sinatra_service/search'
+require_relative 'sinatra_service/search.ru'
 run Search
