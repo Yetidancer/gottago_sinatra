@@ -3,5 +3,5 @@ require 'bundler'
 
 Bundler.require
 
-require './search'
+require './sinatra_service/search'
 run Sinatra::Application
