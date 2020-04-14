@@ -1,9 +1,9 @@
-require 'sinatra/base'
+require 'sinatra'
 require 'faraday'
 require 'pry'
 require './services/refuge_restrooms_service'
 
-class Search < Sinatra::Base
+class Search < Sinatra::Application
   get '/api/v1/search' do
     number_of_results = params['number_of_results']
     latitude = params['latitude'].to_f
