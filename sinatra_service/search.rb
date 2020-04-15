@@ -12,6 +12,12 @@ class Search < Sinatra::Application
 
     RefugeRestroomsService.new.search_bathrooms(number_of_results, latitude, longitude, distance)
   end
+
+  get '/api/v1/all' do
+    page = params['page']
+
+    RefugeRestroomsService.new.return_bathrooms(page)
+  end
 end
 
 run Search.run!
